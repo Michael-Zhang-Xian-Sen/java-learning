@@ -1,7 +1,0 @@
-
-public class CalendarTest {
-	public static void main(String[] args) {
-		localDate date = LocalDate.now();
-		
-	}
-}
