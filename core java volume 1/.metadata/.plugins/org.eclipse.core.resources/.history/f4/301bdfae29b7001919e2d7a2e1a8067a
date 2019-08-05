@@ -1,0 +1,9 @@
+import com.horstmann.corejava.*;
+
+
+public class PackageTest {
+	public static void main(String[] args) {
+		Employee harry = new Employee("Harry Hacker",5000,1989,10,1);
+		
+	}
+}

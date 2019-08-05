@@ -1,0 +1,9 @@
+
+public class ConstructorTest {
+	public static void main(String[] args) {
+		EmployeeConstructorEnhance[] staff = new Employee[3];
+		
+		staff[0] = new EmployeeConstructorEnhance("Harry",40000);
+		staff[1] = new EmployeeConstructorEnhance();
+	}
+}

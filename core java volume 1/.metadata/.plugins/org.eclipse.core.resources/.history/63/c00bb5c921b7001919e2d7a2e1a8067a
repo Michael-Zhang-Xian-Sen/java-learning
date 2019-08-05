@@ -1,0 +1,61 @@
+import java.util.Random;
+
+public class EmployeeConstructorEnhance {
+	private static int nextId = 1;	// 静态变量，属于类，所有实例共用一个。
+
+	private String name;
+	private double salary;
+	private int id;
+	
+	/**
+	 *  静态域初始化。初始化nextId，在10000以内随机取一个整数值。
+	 */
+	static {
+		Random generator = new Random();
+		nextId = generator.nextInt(10000);
+	}
+	
+	/**
+	 * 实例域初始化
+	 */
+	{
+		id = nextId;
+		nextId++;
+	}
+	
+	
+	public EmployeeConstructorEnhance(String n, double s) {
+		name = n;
+		salary = s;
+	}
+	
+	public EmployeeConstructorEnhance(double s) {
+		this("")
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public double getSalary() {
+		return salary;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public void setId() {
+		this.id = nextId;
+		nextId++;
+	}
+	
+	public static int getNextId() {
+		return nextId;
+	}
+	
+	public static void main(String[] args) {
+		Employee e = new Employee("Harry",50000);
+		System.out.println(e.getName() + " " + e.getSalary());
+	}
+}
