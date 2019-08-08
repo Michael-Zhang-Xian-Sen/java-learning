@@ -12,3 +12,4 @@ public class PackageTest {
 		out.println("name="+harry.getName()+",salary="+harry.getSalary());
 	}
 }
+
