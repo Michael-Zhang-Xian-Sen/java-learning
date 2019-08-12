@@ -1,6 +1,0 @@
-public class PackageTest {
-	public static void main(String[] args) {
-		com.horstmann.corejava.Employee harry = new com.horstmann.corejava.Employee("Harry Hacker",5000,1989,10,1);
-			
-	}
-}
